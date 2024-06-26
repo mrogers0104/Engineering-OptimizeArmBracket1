@@ -1,0 +1,6 @@
+﻿---
+From Hock, email 8/12/16
+It is the intention for the engineer to enter the bolt diameter when selection F1554 anchor bolts. We do not want the program to pick the size for the AB. 
+---
+
+

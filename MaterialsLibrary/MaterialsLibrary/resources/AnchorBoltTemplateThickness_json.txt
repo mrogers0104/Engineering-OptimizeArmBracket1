@@ -1,0 +1,30 @@
+[{
+	"IDX": "1",
+	"Thickness": "0.375",
+	"MaxBoltCircleDiameter": "50.0",
+	"Inactive": "false"
+},
+{
+	"IDX": "2",
+	"Thickness": "0.50",
+	"MaxBoltCircleDiameter": "65.0",
+	"Inactive": "false"
+},
+{
+	"IDX": "3",
+	"Thickness": "0.625",
+	"MaxBoltCircleDiameter": "95.0",
+	"Inactive": "false"
+},
+{
+	"IDX": "4",
+	"Thickness": "0.75",
+	"MaxBoltCircleDiameter": "95.0",
+	"Inactive": "false"
+},
+{
+	"IDX": "5",
+	"Thickness": "1.0",
+	"MaxBoltCircleDiameter": "150.0",
+	"Inactive": "false"
+}]

@@ -1,0 +1,26 @@
+﻿[
+	{
+		"BktThickness": "0.500",
+		"BendRadius": "1.000"
+	},
+	{
+		"BktThickness": "0.625",
+		"BendRadius": "1.875"
+	},
+	{
+		"BktThickness": "0.750",
+		"BendRadius": "2.250"
+	},
+	{
+		"BktThickness": "0.875",
+		"BendRadius": "2.625"
+	},
+	{
+		"BktThickness": "1.000",
+		"BendRadius": "3.000"
+	},
+	{
+		"BktThickness": "1.250",
+		"BendRadius": "3.750"
+	}
+]

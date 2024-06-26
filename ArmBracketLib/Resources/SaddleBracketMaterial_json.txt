@@ -1,0 +1,58 @@
+﻿ [
+      {
+        "FinishType": "Galvanized",
+        "MaterialThickness": ".625"
+      },
+      {
+        "FinishType": "Galvanized",
+        "MaterialThickness": ".75"
+      },
+      {
+        "FinishType": "Galvanized",
+        "MaterialThickness": "1.00"
+      },
+      {
+        "FinishType": "Galvanized",
+        "MaterialThickness": "1.25"
+      },
+      {
+        "FinishType": "Galvanized",
+        "MaterialThickness": "1.50"
+      },
+      {
+        "FinishType": "Galvanized",
+        "MaterialThickness": "1.75"
+      },
+      {
+        "FinishType": "Galvanized",
+        "MaterialThickness": "2.00"
+      },
+      {
+        "FinishType": "Weathering",
+        "MaterialThickness": ".625"
+      },
+      {
+        "FinishType": "Weathering",
+        "MaterialThickness": ".75"
+      },
+      {
+        "FinishType": "Weathering",
+        "MaterialThickness": "1.00"
+      },
+      {
+        "FinishType": "Weathering",
+        "MaterialThickness": "1.25"
+      },
+      {
+        "FinishType": "Weathering",
+        "MaterialThickness": "1.50"
+      },
+      {
+        "FinishType": "Weathering",
+        "MaterialThickness": "1.75"
+      },
+      {
+        "FinishType": "Weathering",
+        "MaterialThickness": "2.00"
+      }
+    ]

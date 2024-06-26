@@ -1,0 +1,42 @@
+[{
+    "ArmWallThick":0.1875,
+    "Threshold":17,
+    "PJP_1":0.375,
+    "PJP_2":0.3125,
+    "CJP":0.1875,
+},
+{
+    "ArmWallThick":0.25,
+    "Threshold":25,
+    "PJP_1":0.4375,
+    "PJP_2":0.375,
+    "CJP":0.25,
+},
+{
+    "ArmWallThick":0.3125,
+    "Threshold":30,
+    "PJP_1":0.5625,
+    "PJP_2":0.5,
+    "CJP":0.3125,
+},
+{
+    "ArmWallThick":0.375,
+    "Threshold":34,
+    "PJP_1":0.6875,
+    "PJP_2":0.625,
+    "CJP":0.3125,
+},
+{
+    "ArmWallThick":0.4375,
+    "Threshold":43,
+    "PJP_1":0.75,
+    "PJP_2":0.6875,
+    "CJP":0.375,
+},
+{
+    "ArmWallThick":0.5,
+    "Threshold":47,
+    "PJP_1":0.875,
+    "PJP_2":0.8125,
+    "CJP":0.4375,
+}]

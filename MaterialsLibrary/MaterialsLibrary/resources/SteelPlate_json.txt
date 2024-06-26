@@ -1,0 +1,975 @@
+[
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 1,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 1.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 1.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 1.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 2,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 2.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 2.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 2.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 3,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 3.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 3.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 3.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 4,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.1875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.3125,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.4375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.5625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 1,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 1.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.1875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.3125,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.4375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.5625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 1,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 1.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 1.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 1.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 2,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 2.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 2.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 2.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 3,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 3.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 3.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 3.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 4,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 65000,
+    "FyPsi": 46000,
+    "Thickness": 4.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 65000,
+    "FyPsi": 46000,
+    "Thickness": 4.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.1875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.3125,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.4375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 75000,
+    "FyPsi": 50000,
+    "Thickness": 0.5625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 1,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 1.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.1875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.3125,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.4375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 0.5625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 1,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 1.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.1875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.3125,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.4375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.5625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 1.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 1.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 2,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 2.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 2.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 2.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 3,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 3.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 3.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 3.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 4,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A633",
+    "FuPsi": 75000,
+    "FyPsi": 60000,
+    "Thickness": 4.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 1.00,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 1.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 1.50,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 1.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 2.00,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 2.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 2.50,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 2.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 3.00,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 3.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 3.50,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 3.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 4.00,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 4.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 4.50,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 4.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 5.00,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 5.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 5.50,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 5.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 6.00,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.28125,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.28125,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.21875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.21875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 4.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 4.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 4.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 5.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 5.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 0.375,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 0.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 0.625,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A36",
+    "FuPsi": 50000,
+    "FyPsi": 36000,
+    "Thickness": 0.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A871",
+    "FuPsi": 80000,
+    "FyPsi": 65000,
+    "Thickness": 0.875,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 5.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A572",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 6,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 65000,
+    "FyPsi": 46000,
+    "Thickness": 4.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 65000,
+    "FyPsi": 46000,
+    "Thickness": 5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 5.25,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 5.5,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 5.75,
+    "Inactive": 0
+  },
+  {
+    "ASTM": "A588",
+    "FuPsi": 60000,
+    "FyPsi": 42000,
+    "Thickness": 6,
+    "Inactive": 0
+  }
+]

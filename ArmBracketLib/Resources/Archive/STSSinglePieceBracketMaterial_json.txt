@@ -1,0 +1,164 @@
+﻿{
+    "STSSinglePieceBracketMaterial": [
+      {
+        "IDX": "1",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "6.250000000000000e-001"
+      },
+      {
+        "IDX": "2",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "7.500000000000000e-001"
+      },
+      {
+        "IDX": "3",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "8.750000000000000e-001"
+      },
+      {
+        "IDX": "4",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "1.000000000000000e+000"
+      },
+      {
+        "IDX": "5",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "1.250000000000000e+000"
+      },
+      {
+        "IDX": "6",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "1.500000000000000e+000"
+      },
+      {
+        "IDX": "7",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "1.750000000000000e+000"
+      },
+      {
+        "IDX": "8",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "2.000000000000000e+000"
+      },
+      {
+        "IDX": "9",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "2.250000000000000e+000"
+      },
+      {
+        "IDX": "10",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "2.500000000000000e+000"
+      },
+      {
+        "IDX": "11",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "2.750000000000000e+000"
+      },
+      {
+        "IDX": "12",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "3.000000000000000e+000"
+      },
+      {
+        "IDX": "13",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "3.250000000000000e+000"
+      },
+      {
+        "IDX": "14",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "3.500000000000000e+000"
+      },
+      {
+        "IDX": "15",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "3.750000000000000e+000"
+      },
+      {
+        "IDX": "16",
+        "FinishType": "Galvanized",
+        "MaterialThickness": "4.000000000000000e+000"
+      },
+      {
+        "IDX": "17",
+        "FinishType": "Weathering",
+        "MaterialThickness": "6.250000000000000e-001"
+      },
+      {
+        "IDX": "18",
+        "FinishType": "Weathering",
+        "MaterialThickness": "7.500000000000000e-001"
+      },
+      {
+        "IDX": "19",
+        "FinishType": "Weathering",
+        "MaterialThickness": "8.750000000000000e-001"
+      },
+      {
+        "IDX": "20",
+        "FinishType": "Weathering",
+        "MaterialThickness": "1.000000000000000e+000"
+      },
+      {
+        "IDX": "21",
+        "FinishType": "Weathering",
+        "MaterialThickness": "1.250000000000000e+000"
+      },
+      {
+        "IDX": "22",
+        "FinishType": "Weathering",
+        "MaterialThickness": "1.500000000000000e+000"
+      },
+      {
+        "IDX": "23",
+        "FinishType": "Weathering",
+        "MaterialThickness": "1.750000000000000e+000"
+      },
+      {
+        "IDX": "24",
+        "FinishType": "Weathering",
+        "MaterialThickness": "2.000000000000000e+000"
+      },
+      {
+        "IDX": "25",
+        "FinishType": "Weathering",
+        "MaterialThickness": "2.250000000000000e+000"
+      },
+      {
+        "IDX": "26",
+        "FinishType": "Weathering",
+        "MaterialThickness": "2.500000000000000e+000"
+      },
+      {
+        "IDX": "27",
+        "FinishType": "Weathering",
+        "MaterialThickness": "2.750000000000000e+000"
+      },
+      {
+        "IDX": "28",
+        "FinishType": "Weathering",
+        "MaterialThickness": "3.000000000000000e+000"
+      },
+      {
+        "IDX": "29",
+        "FinishType": "Weathering",
+        "MaterialThickness": "3.250000000000000e+000"
+      },
+      {
+        "IDX": "30",
+        "FinishType": "Weathering",
+        "MaterialThickness": "3.500000000000000e+000"
+      },
+      {
+        "IDX": "31",
+        "FinishType": "Weathering",
+        "MaterialThickness": "3.750000000000000e+000"
+      },
+      {
+        "IDX": "32",
+        "FinishType": "Weathering",
+        "MaterialThickness": "4.000000000000000e+000"
+      }
+    ]
+}

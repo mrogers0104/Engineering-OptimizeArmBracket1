@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <AssemblyTitle>Arm Bracket Analysis Library</AssemblyTitle>
+    <Description>Analyze an arm bracket and / or select a standard arm bracket</Description>
+    <Company>Sabre Industries, LLC.</Company>
+    <Product>ArmBracketDesignLibrary</Product>
+    <Copyright>Copyright ©  2023</Copyright>
+    <AssemblyVersion>1.18.0.0</AssemblyVersion>
+    <FileVersion>1.18.0.0</FileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documentation\Arm8SidesDetail.wmf" />
+    <Content Include="Documentation\ArmHexFlat2Flat.wmf" />
+    <Content Include="Documentation\ArmOctFlat2Flat.wmf" />
+    <Content Include="Documentation\ArmOctPoint2Point.wmf" />
+    <Content Include="Documentation\ArmShapes.wmf" />
+    <Content Include="Resources\BracketBendRadii_json.txt" />
+    <Content Include="Resources\BracketBoltGrade_json.txt" />
+    <Content Include="Resources\BracketToArmWeldSize_json.txt" />
+    <Content Include="Resources\SabreCustomBrackets_json.txt" />
+    <Content Include="Resources\SabreFWTStdBrackets_json.txt" />
+    <Content Include="Resources\SaddleBracketMaterial_json.txt" />
+    <Content Include="Resources\SteelShapes_json.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLLs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="NLog" Version="5.3.2" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="6.0.0" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="8.0.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="6.0.0" />
+    <PackageReference Include="System.ServiceModel.Federation" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ArmBracketDesignEngine\BracketControllingLoadcaseDTO.cs" />
+    <Compile Remove="ArmBracketDesignEngine\BracketLoadsDTO.cs" />
+    <Compile Remove="Reports\ArmBracketContainer.cs" />
+    <Compile Remove="Reports\BracketAnalysisReport.cs" />
+    <Compile Remove="Reports\BracketAnalysisReport.Designer.cs" />
+    <Compile Remove="StructureComponents\Structure.cs" />
+    <Compile Remove="StructureComponents\Tube.cs" />
+    <EmbeddedResource Remove="Reports\BracketAnalysisReport.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MaterialsLibrary\MaterialsLibrary\MaterialsLibrary.csproj" />
+  </ItemGroup>
+</Project>

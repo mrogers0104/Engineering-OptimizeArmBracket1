@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimizeArmBracket1", "OptimizeArmBracket1\OptimizeArmBracket1.csproj", "{6C883281-2737-4FDF-BE12-90711F67CA01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArmBracketDesignLibrary", "ArmBracketLib\ArmBracketDesignLibrary.csproj", "{A65D6BB1-9F24-45D0-BDFB-5B873E35BB97}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArmBracketLibConsoleRun", "ArmBracketLibConsoleRun\ArmBracketLibConsoleRun.csproj", "{E6BC97DE-5B2A-487C-819E-407AF1A5AEC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialsLibrary", "MaterialsLibrary\MaterialsLibrary\MaterialsLibrary.csproj", "{0BDD3798-A1D5-4D3A-BF30-F372070067F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{D017AD98-78EB-475A-8FE6-D1086CF0D7A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C883281-2737-4FDF-BE12-90711F67CA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C883281-2737-4FDF-BE12-90711F67CA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C883281-2737-4FDF-BE12-90711F67CA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C883281-2737-4FDF-BE12-90711F67CA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65D6BB1-9F24-45D0-BDFB-5B873E35BB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65D6BB1-9F24-45D0-BDFB-5B873E35BB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65D6BB1-9F24-45D0-BDFB-5B873E35BB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65D6BB1-9F24-45D0-BDFB-5B873E35BB97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BC97DE-5B2A-487C-819E-407AF1A5AEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BC97DE-5B2A-487C-819E-407AF1A5AEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BC97DE-5B2A-487C-819E-407AF1A5AEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BC97DE-5B2A-487C-819E-407AF1A5AEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDD3798-A1D5-4D3A-BF30-F372070067F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDD3798-A1D5-4D3A-BF30-F372070067F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDD3798-A1D5-4D3A-BF30-F372070067F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDD3798-A1D5-4D3A-BF30-F372070067F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C42C9230-71E6-4477-98A0-46D9253FD818}
+	EndGlobalSection
+EndGlobal

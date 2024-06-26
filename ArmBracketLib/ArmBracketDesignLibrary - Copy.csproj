@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC5C9536-7815-4338-9D87-0B78E01E697B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArmBracketDesignLibrary</RootNamespace>
+    <AssemblyName>ArmBracketDesignLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialsLibrary, Version=1.1.0.11, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MaterialsLib\MaterialsLibrary\MaterialsLibrary\bin\Release\MaterialsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.6.8\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArmBracketDesignEngine\ArmJointDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\ArmLoadDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\BracketControllingResultDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\ArmBracketDesignInput.cs" />
+    <Compile Include="ArmBracketDesignEngine\ArmBracketDesignInputBundle.cs" />
+    <Compile Include="ArmBracketDesignEngine\ArmBracketDesignOutput.cs" />
+    <Compile Include="ArmBracketDesignEngine\ArmBracketDesignResults.cs" />
+    <Compile Include="ArmBracketDesignEngine\BracketLoadCalcsDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\BracketLoadcaseDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\BracketLoadDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\BracketResultDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\BracketResultsDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\CustomBracketInput.cs" />
+    <Compile Include="ArmBracketDesignEngine\DesignEngine.cs" />
+    <Compile Include="ArmBracketDesignEngine\Message.cs" />
+    <Compile Include="ArmBracketDesignEngine\PoleStructureDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\SaddleBracketDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\UserInputs.cs" />
+    <Compile Include="ArmBracketDesignEngine\SteelShapeDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\ThruPlateConnectionDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\TubularArmDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\TubularDavitArmDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\TubularXArmDTO.cs" />
+    <Compile Include="ArmBracketDesignEngine\ValuesFromPLSData.cs" />
+    <Compile Include="ArmBracketDesignEngine\Vector2DTO.cs" />
+    <Compile Include="ArmProject.cs" />
+    <Compile Include="BracketAnalysis\BracketBolt.cs" />
+    <Compile Include="BracketAnalysis\BracketBoltGroup.cs" />
+    <Compile Include="BracketAnalysis\BracketControllingResult.cs" />
+    <Compile Include="BracketAnalysis\BracketLoad.cs" />
+    <Compile Include="BracketAnalysis\BracketLoadCalcs.cs" />
+    <Compile Include="BracketAnalysis\BracketProperties.cs" />
+    <Compile Include="BracketAnalysis\BracketResult.cs" />
+    <Compile Include="BracketAnalysis\BracketThruPlateDesign.cs" />
+    <Compile Include="BracketAnalysis\StiffenerGroup.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Helpers\Enums.cs" />
+    <Compile Include="Helpers\MyExtensions.cs" />
+    <Compile Include="Helpers\RegularPolygon.cs" />
+    <Compile Include="Helpers\TubularArmConverter.cs" />
+    <Compile Include="Helpers\Utils.cs" />
+    <Compile Include="Materials\PlateMaterial.cs" />
+    <Compile Include="Materials\SteelShape.cs" />
+    <Compile Include="Materials\StructuralBolts.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StructureComponents\Arms\ArmConnection.cs" />
+    <Compile Include="StructureComponents\Arms\ArmJoint.cs" />
+    <Compile Include="StructureComponents\Arms\ArmLoad.cs" />
+    <Compile Include="StructureComponents\Arms\ThruPlateConnection.cs" />
+    <Compile Include="StructureComponents\Arms\TubularDavitArm.cs" />
+    <Compile Include="StructureComponents\Arms\TubularXArm.cs" />
+    <Compile Include="StructureComponents\Data\BracketBendRadii.cs" />
+    <Compile Include="StructureComponents\Data\BracketBendRadius.cs" />
+    <Compile Include="StructureComponents\Data\BracketBoltGrade.cs" />
+    <Compile Include="StructureComponents\Data\BracketToArmWeldSize.cs" />
+    <Compile Include="StructureComponents\Data\CustomBracketData.cs" />
+    <Compile Include="StructureComponents\Data\CustomBracketDataItem.cs" />
+    <Compile Include="StructureComponents\Data\PlateMaterialDataItem.cs" />
+    <Compile Include="StructureComponents\Data\SaddleBracketData.cs" />
+    <Compile Include="StructureComponents\Data\StdBracketDataItem.cs" />
+    <Compile Include="StructureComponents\Pole\PoleStructure.cs" />
+    <Compile Include="StructureComponents\SaddleBracket.cs" />
+    <Compile Include="StructureComponents\Arms\TubularArm.cs" />
+    <Compile Include="StructureComponents\Arms\TubularArmAttachmentPoint.cs" />
+    <Compile Include="Vectors\AABB.cs" />
+    <Compile Include="Vectors\Line3D.cs" />
+    <Compile Include="Vectors\Vector2.cs" />
+    <Compile Include="Vectors\Vector3D.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Documentation\ArmAndConnectionDesignProcedure.docx" />
+    <None Include="Documentation\ArmConnectionSketches.vsd" />
+    <None Include="Documentation\Backend_BracketBoltProperties.xlsm" />
+    <None Include="packages.config" />
+    <None Include="Resources\SabreCustomBrackets.csv" />
+    <None Include="Resources\SabreCustomBrackets.json" />
+    <None Include="Resources\SabreCustomBrackets.xlsb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documentation\Arm8SidesDetail.wmf" />
+    <Content Include="Documentation\ArmHexFlat2Flat.wmf" />
+    <Content Include="Documentation\ArmOctFlat2Flat.wmf" />
+    <Content Include="Documentation\ArmOctPoint2Point.wmf" />
+    <Content Include="Documentation\ArmShapes.wmf" />
+    <Content Include="Resources\BracketBendRadii_json.txt" />
+    <Content Include="Resources\BracketBoltGrade_json.txt" />
+    <Content Include="Resources\BracketToArmWeldSize_json.txt" />
+    <Content Include="Resources\SabreCustomBrackets_json.txt" />
+    <Content Include="Resources\SabreFWTStdBrackets_json.txt" />
+    <Content Include="Resources\SaddleBracketMaterial_json.txt" />
+    <Content Include="Resources\SteelShapes_json.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DLLs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

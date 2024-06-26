@@ -1,0 +1,182 @@
+﻿ [
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": ".1875",
+        "MinimumDieBedOpening": "1.50",
+        "MinimumBendRadius": ".375",
+        "MinimumBracketLegWidth": "1.125",
+        "MinimumBoltDistance": ".875",
+        "MinimumShaftEdgeDistance": ".25"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": ".25",
+        "MinimumDieBedOpening": "2.00",
+        "MinimumBendRadius": ".50",
+        "MinimumBracketLegWidth": "1.50",
+        "MinimumBoltDistance": "1.00",
+        "MinimumShaftEdgeDistance": ".25"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": ".3125",
+        "MinimumDieBedOpening": "2.50",
+        "MinimumBendRadius": ".50",
+        "MinimumBracketLegWidth": "1.875",
+        "MinimumBoltDistance": "1.00",
+        "MinimumShaftEdgeDistance": ".25"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": ".375",
+        "MinimumDieBedOpening": "3.00",
+        "MinimumBendRadius": ".75",
+        "MinimumBracketLegWidth": "2.25",
+        "MinimumBoltDistance": "1.25",
+        "MinimumShaftEdgeDistance": ".25"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": ".50",
+        "MinimumDieBedOpening": "4.00",
+        "MinimumBendRadius": ".75",
+        "MinimumBracketLegWidth": "3.00",
+        "MinimumBoltDistance": "1.25",
+        "MinimumShaftEdgeDistance": ".25"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": ".625",
+        "MinimumDieBedOpening": "5.00",
+        "MinimumBendRadius": "1.00",
+        "MinimumBracketLegWidth": "3.75",
+        "MinimumBoltDistance": "1.75",
+        "MinimumShaftEdgeDistance": ".50"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": ".75",
+        "MinimumDieBedOpening": "6.00",
+        "MinimumBendRadius": "1.00",
+        "MinimumBracketLegWidth": "4.50",
+        "MinimumBoltDistance": "1.75",
+        "MinimumShaftEdgeDistance": ".50"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": "1.00",
+        "MinimumDieBedOpening": "8.00",
+        "MinimumBendRadius": "2.00",
+        "MinimumBracketLegWidth": "6.00",
+        "MinimumBoltDistance": "2.75",
+        "MinimumShaftEdgeDistance": ".50"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": "1.25",
+        "MinimumDieBedOpening": "10.00",
+        "MinimumBendRadius": "2.50",
+        "MinimumBracketLegWidth": "7.50",
+        "MinimumBoltDistance": "2.75",
+        "MinimumShaftEdgeDistance": "1.00"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": ".1875",
+        "MinimumDieBedOpening": "1.50",
+        "MinimumBendRadius": ".5625",
+        "MinimumBracketLegWidth": "1.125",
+        "MinimumBoltDistance": "1.00",
+        "MinimumShaftEdgeDistance": ".25"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": ".25",
+        "MinimumDieBedOpening": "2.00",
+        "MinimumBendRadius": ".75",
+        "MinimumBracketLegWidth": "1.50",
+        "MinimumBoltDistance": "1.25",
+        "MinimumShaftEdgeDistance": ".25"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": ".3125",
+        "MinimumDieBedOpening": "2.50",
+        "MinimumBendRadius": ".9375",
+        "MinimumBracketLegWidth": "1.875",
+        "MinimumBoltDistance": "1.50",
+        "MinimumShaftEdgeDistance": ".50"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": ".375",
+        "MinimumDieBedOpening": "1.125",
+        "MinimumBendRadius": "2.25",
+        "MinimumBracketLegWidth": "1.625",
+        "MinimumBoltDistance": ".50",
+        "MinimumShaftEdgeDistance": ".50"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": ".50",
+        "MinimumDieBedOpening": "4.00",
+        "MinimumBendRadius": "1.50",
+        "MinimumBracketLegWidth": "3.00",
+        "MinimumBoltDistance": "2.00",
+        "MinimumShaftEdgeDistance": ".75"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": ".625",
+        "MinimumDieBedOpening": "5.00",
+        "MinimumBendRadius": "1.875",
+        "MinimumBracketLegWidth": "3.75",
+        "MinimumBoltDistance": "2.375",
+        "MinimumShaftEdgeDistance": "1.00"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": ".75",
+        "MinimumDieBedOpening": "7.00",
+        "MinimumBendRadius": "2.25",
+        "MinimumBracketLegWidth": "5.25",
+        "MinimumBoltDistance": "2.75",
+        "MinimumShaftEdgeDistance": "1.25"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": "1.00",
+        "MinimumDieBedOpening": "9.00",
+        "MinimumBendRadius": "3.00",
+        "MinimumBracketLegWidth": "6.75",
+        "MinimumBoltDistance": "3.50",
+        "MinimumShaftEdgeDistance": "1.75"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": "1.25",
+        "MinimumDieBedOpening": "12.00",
+        "MinimumBendRadius": "3.75",
+        "MinimumBracketLegWidth": "9.00",
+        "MinimumBoltDistance": "4.25",
+        "MinimumShaftEdgeDistance": "2.00"
+      },
+      {
+        "BendRadiusType": "_3T",
+        "PlateThickness": "1.50",
+        "MinimumDieBedOpening": "15.00",
+        "MinimumBendRadius": "4.50",
+        "MinimumBracketLegWidth": "11.25",
+        "MinimumBoltDistance": "5.25",
+        "MinimumShaftEdgeDistance": "2.00"
+      },
+      {
+        "BendRadiusType": "_2T",
+        "PlateThickness": "1.50",
+        "MinimumDieBedOpening": "15.00",
+        "MinimumBendRadius": "3.00",
+        "MinimumBracketLegWidth": "11.25",
+        "MinimumBoltDistance": "2.75",
+        "MinimumShaftEdgeDistance": "1.00"
+      }
+    ]

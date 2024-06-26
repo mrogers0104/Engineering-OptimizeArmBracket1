@@ -1,0 +1,106 @@
+{
+	"Inputs": [
+		{
+			"BundleId": "00000000-0000-0000-0000-000000000000",
+			"BracketID": "5c7f06a0-d85a-45fe-aa2f-653f624061d0",
+			"BidNumber": "60-10000",
+			"OrderNumber": "00-000000",
+			"Engineer": "mrogers",
+			"Customer": "Sabre",
+			"ProjectDescription": "Unit Test Arm Bracket #1",
+			"UseArmPoleOffsets": true,
+			"MyPlateFinish": 0,
+			"StandardInputs": {
+				"AllowArmCoping": false,
+				"AllowCenterBolts": false,
+				"AllowA354BCBolts": false,
+				"PoleStructure": {
+					"PoleDiameterIn": 21.0,
+					"WallThickness": 0.0,
+					"PoleTaper": 0.25,
+					"PlateFinish": 0
+				},
+				"ThruPlateConnection": {
+					"ThruPlateOpening": 15.0,
+					"ConnectionType": 1,
+					"BracketWidth": 15.125,
+					"Height": 18.0,
+					"ConnectionTypeLabel": "Thru Plate",
+					"PlateFinish": 1,
+					"Id": "cd669f39-f95b-4087-978b-fd25705f1141",
+					"Label": "",
+					"Thickness": 0.625
+				},
+				"TubularXArm": {
+					"Armtype": 1,
+					"Rise": 6.875,
+					"Bent": false,
+					"Radius": 0.0,
+					"Dft": 0.0,
+					"AttachLabel": "",
+					"Azimuth": 0.0,
+					"DavitPropertyLabel": "",
+					"ArmJoints": [
+						{
+							"Id": "3dc9a21b-f194-4821-af50-03cc8244d61a",
+							"JointLabel": "Test #2",
+							"HorizontalOffset": 0.0,
+							"VerticalOffset": 0.0,
+							"Diameter": 13.75,
+							"UserDefined": true
+						}
+					],
+					"ArmLoads": {
+						"Common": [
+							{
+								"Id": "d2e33617-fb76-411e-81fc-fba45feca504",
+								"LoadCase": "",
+								"Label": "",
+								"RelDist": 0.0,
+								"JointLabel": "",
+								"LongitudinalOffset": 0.0,
+								"TransverseOffset": 0.0,
+								"VerticalOffset": 0.0,
+								"AxialForce": 1.5,
+								"VerticalShear": 1.0,
+								"HorizontalShear": 10.5,
+								"HorizontalMoment": 143.0,
+								"VerticalMoment": 16.125,
+								"Torsion": 5.9
+							}
+						]
+					},
+					"DesignMethodSpecified": 1,
+					"DesignMethodUsed": 0,
+					"NonUserArmJoints": [],
+					"PoleDiameterIn": 0.0,
+					"UseArmPoleOffsets": false,
+					"Label": "",
+					"MaterialSpecification": 0,
+					"TipFlatWidthInches": 0.0,
+					"BaseFlatWidthInches": 13.75,
+					"MaterialThicknessInches": 0.1875,
+					"Shape": {
+						"Description": "Octagonal",
+						"Id": "8F",
+						"IsRegularPolygon": true,
+						"IsTubing": false,
+						"SideCount": 8,
+						"TubeOrientation": 0
+					},
+					"Finish": 0,
+					"LengthFt": 13.75,
+					"TipVerticalOffset": 0.0,
+					"TipHorizontalOffset": 0.0
+				},
+				"SaddleBracket": null
+				},
+				"Label": "",
+				"Customer": "",
+				"ProjectDescription": "",
+				"UseArmPoleOffsets": true,
+				"MyPlateFinish": 0
+			}
+	],
+	"Guid": "1bf52576-14cc-4531-a5d4-c91f44b91aae"
+}
