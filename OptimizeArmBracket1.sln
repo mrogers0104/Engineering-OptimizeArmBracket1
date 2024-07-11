@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimizeArmBracket1", "OptimizeArmBracket1\OptimizeArmBracket1.csproj", "{6C883281-2737-4FDF-BE12-90711F67CA01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptimizeArmBracket1", "OptimizeArmBracket1\OptimizeArmBracket1.csproj", "{6C883281-2737-4FDF-BE12-90711F67CA01}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArmBracketDesignLibrary", "ArmBracketLib\ArmBracketDesignLibrary.csproj", "{A65D6BB1-9F24-45D0-BDFB-5B873E35BB97}"
 EndProject
@@ -12,6 +12,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialsLibrary", "MaterialsLibrary\MaterialsLibrary\MaterialsLibrary.csproj", "{0BDD3798-A1D5-4D3A-BF30-F372070067F2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{D017AD98-78EB-475A-8FE6-D1086CF0D7A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{41113F9C-CF66-4305-A26C-AA27C36DCB03}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

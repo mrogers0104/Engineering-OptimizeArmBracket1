@@ -12,7 +12,7 @@ namespace OptimizeArmBracket1.Helpers
 {
     internal class Run
     {
-        int cnt = 0;
+        private int cnt = 0;
 
         public void OptimizeArmBracket()
         {
@@ -31,7 +31,6 @@ namespace OptimizeArmBracket1.Helpers
             Console.WriteLine($"{bkt.BracketHeight}\" X {bkt.BracketThick:f3}\" " +
                 $"Bolts: {bkt.BoltQty} @ {bkt.BoltDiameter:f4}\" " +
                 $"Cntr Spc: {bkt.BracketBoltCenterSpace:f3}");
-
         }
 
         private void Optimizer_RanIteration(object sender, EventArgs e)
@@ -44,15 +43,15 @@ namespace OptimizeArmBracket1.Helpers
             var bkt = results.ArmBracketDesignOutputs[0].BracketDTO;
 
             Console.WriteLine($"--- #{cnt} -----------------------------------------");
-            Console.WriteLine($"Weight Diff: {fitness:f3} lbs");
-            //Console.WriteLine($"Bkt Weight: {fitness:f3} lbs");
+            Console.WriteLine($"Fitness: {fitness:f3}");
             if (bkt != null)
             {
                 Console.WriteLine($"{bkt.BracketHeight}\" X {bkt.BracketThick:f3}\" " +
                     $"Bolts: {bkt.BoltQty} @ {bkt.BoltDiameter:f4}\" " +
                     $"Cntr Spc: {bkt.BracketBoltCenterSpace:f3}");
             }
-            else {
+            else
+            {
                 Console.WriteLine("Bracket not defined!");
             }
         }
