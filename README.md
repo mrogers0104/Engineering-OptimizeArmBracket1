@@ -48,13 +48,15 @@ Let’s relate to structural elements in the context of genetic algorithms (GAs) f
     - Each generation produces better designs by selecting, recombining, and mutating chromosomes.
 ## GeneticSharp
 **GeneticSharp** is like a smart problem-solving tool inspired by how nature evolves species. Imagine it as a digital evolution simulator. Here's a simplified version:
-1.	Chromosomes: Think of these as your genetic recipe cards. You get one set from your mom and another from your dad. These cards contain instructions for building you, like eye color, height, and other traits.
-2.	DNA Double Helix: Picture a twisted ladder made of tiny building blocks. Each step of the ladder is a pair of nucleotides. These nucleotides spell out your genetic code.
-3.	Genetic Algorithms (GAs): Now, GeneticSharp uses these ideas to solve problems. It starts with a population of "individuals" (like creatures). Each individual has its own set of "genes" (like those recipe cards).
-4.	Natural Selection: GeneticSharp evaluates how well each individual solves the problem. The best ones survive and pass their genes to the next generation. Over time, the population gets better at solving the problem.
-5.	Mutation and Crossover: Just like in nature, GeneticSharp mixes and tweaks genes. It combines the best traits from different individuals to create new ones. This helps find even better solutions.
-6.	Optimization: GeneticSharp keeps evolving the population until it finds the best solution to the problem. It's like a digital survival of the fittest!
+1.	**Chromosomes**: Think of these as your genetic recipe cards. You get one set from your mom and another from your dad. These cards contain instructions for building you, like eye color, height, and other traits.
+2.	**DNA Double Helix**: Picture a twisted ladder made of tiny building blocks. Each step of the ladder is a pair of nucleotides. These nucleotides spell out your genetic code.
+3.	**Genetic Algorithms (GAs)**: Now, GeneticSharp uses these ideas to solve problems. It starts with a population of "individuals" (like creatures). Each individual has its own set of "genes" (like those recipe cards).
+4.	**Natural Selection**: GeneticSharp evaluates how well each individual solves the problem. The best ones survive and pass their genes to the next generation. Over time, the population gets better at solving the problem.
+5.	**Mutation and Crossover**: Just like in nature, GeneticSharp mixes and tweaks genes. It combines the best traits from different individuals to create new ones. This helps find even better solutions.
+6.	**Optimization**: GeneticSharp keeps evolving the population until it finds the best solution to the problem. It's like a digital survival of the fittest!
+
 **GeneticSharp** is a tool that mimics evolution to solve complex problems.
+
 ## The Design Process
 **OptimizeArmBracket** follows the genetic algorithm procedure as discussed above.
 
