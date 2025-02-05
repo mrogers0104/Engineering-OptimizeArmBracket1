@@ -1,0 +1,92 @@
+name: .NET 8.0 Build, Test and Deploy
+
+on:
+  push:
+    branches: [ main, test, dev ]
+  pull_request:
+    branches: [ main, test, dev ]
+
+env:
+  DOTNET_VERSION: '8.0.x'
+  SOLUTION_FILE_PATH: ./YourSolution.sln
+  BUILD_CONFIGURATION: Release
+
+jobs:
+  build-test-deploy:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Check .NET version
+      run: |
+        Write-Host "Installed .NET SDKs:"
+        dotnet --list-sdks
+        
+        Write-Host "`nInstalled .NET Runtimes:"
+        dotnet --list-runtimes
+        
+        Write-Host "`nCurrent .NET version:"
+        dotnet --version
+      shell: pwsh
+        
+    - name: Restore dependencies
+      run: dotnet restore ${{ env.SOLUTION_FILE_PATH }}
+      
+    - name: Build
+      run: dotnet build ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-restore
+
+    - name: Test
+      run: dotnet test ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage
+      
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: test-results
+        path: ./coverage
+        
+    - name: Test Report
+      uses: dorny/test-reporter@v1
+      if: always()
+      with:
+        name: .NET Tests
+        path: '**/*.trx'
+        reporter: dotnet-trx
+        fail-on-error: true
+      
+    - name: Publish
+      if: success()
+      run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --output ./publish
+      
+    - name: Deploy based on branch
+      if: success()
+      run: |
+        $branch = "${{ github.ref }}"
+        $deployPath = ""
+        
+        if ($branch -eq "refs/heads/main") {
+          $deployPath = "C:\Deployments\Production"
+        } elseif ($branch -eq "refs/heads/test") {
+          $deployPath = "C:\Deployments\Test"
+        } elseif ($branch -eq "refs/heads/dev") {
+          $deployPath = "C:\Deployments\Development"
+        }
+        
+        if ($deployPath -ne "") {
+          # Create directory if it doesn't exist
+          if (!(Test-Path $deployPath)) {
+            New-Item -ItemType Directory -Path $deployPath -Force
+          }
+          
+          # Copy published files
+          Copy-Item -Path ".\publish\*" -Destination $deployPath -Recurse -Force
+          
+          Write-Host "Deployed to: $deployPath"
+        }
+      shell: pwsh

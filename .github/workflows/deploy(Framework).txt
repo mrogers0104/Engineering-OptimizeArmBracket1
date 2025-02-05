@@ -1,0 +1,57 @@
+name: .NET Framework Deploy
+
+on:
+  push:
+    branches: [ main, test, dev ]
+  pull_request:
+    branches: [ main, test, dev ]
+
+env:
+  SOLUTION_FILE_PATH: ./OptimizeArmBracket1.sln
+  BUILD_CONFIGURATION: Release
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+      
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.1.1
+      
+    - name: Restore NuGet packages
+      run: nuget restore ${{ env.SOLUTION_FILE_PATH }}
+      
+    - name: Build solution
+      run: msbuild ${{ env.SOLUTION_FILE_PATH }} /p:Configuration=${{ env.BUILD_CONFIGURATION }}
+      
+    - name: Deploy based on branch
+      run: |
+        $branch = "${{ github.ref }}"
+        $deployPath = ""
+        
+        if ($branch -eq "refs/heads/main") {
+          $deployPath = "C:\Deployments\Production"
+        } elseif ($branch -eq "refs/heads/test") {
+          $deployPath = "C:\Deployments\Test"
+        } elseif ($branch -eq "refs/heads/dev") {
+          $deployPath = "C:\Deployments\Development"
+        }
+        
+        if ($deployPath -ne "") {
+          # Create directory if it doesn't exist
+          if (!(Test-Path $deployPath)) {
+            New-Item -ItemType Directory -Path $deployPath -Force
+          }
+          
+          # Copy build artifacts
+          $sourcePath = ".\YourProject\bin\${{ env.BUILD_CONFIGURATION }}\*"
+          Copy-Item -Path $sourcePath -Destination $deployPath -Recurse -Force
+          
+          Write-Host "Deployed to: $deployPath"
+        }
+      shell: pwsh

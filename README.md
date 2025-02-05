@@ -1,10 +1,13 @@
 # OptimizeArmBracket1
 
+# !!! **Alert:** This is for testing GitHub Actions ONLY!  Do **NOT** use for any other purpose!!! 
+
+
 **OptimizeArmBracket** is a C# program that designs an arm bracket to find its optimal weight. The optimization process employs a genetic algorithm, and the implementation utilizes GeneticSharp.
 ## Genetic Algorithm (GA)
 What is a genetic algorithm?
 
-A **genetic algorithm (GA)** is like a computer program that mimics how nature works. Imagine you have a group of creatures, and they all have different traits. Some traits help them survive better in their environment, while others don’t. The GA tries to find the best combination of these traits to solve a problem.
+A **genetic algorithm (GA)** is like a computer program that mimics how nature works. Imagine you have a group of creatures, and they all have different traits. Some traits help them survive better in their environment, while others donï¿½t. The GA tries to find the best combination of these traits to solve a problem.
 
 Here's how it works step by step as it relates to designing an arm bracket:
 1.	Creating a Population: Imagine you have a bunch of random creatures (here we call them "arm brackets"). Each arm bracket represents a possible solution to the problem. These solutions are like different recipes for solving the problem.  The problem being solved is which chromosome weights less than the other chromosomes in the population.
@@ -12,12 +15,12 @@ Here's how it works step by step as it relates to designing an arm bracket:
 3.	Mixing Traits (Crossover): When two individuals "mate," their traits (or "genes") combine. It's like mixing arm brackets from two recipes to create a new one. This new arm bracket might be better than either of its parents.
 A gene is either plate thickness, bolt size, bolt qty, stiffener thickness, or stiffener qty.
 4.	Adding Some Variety (Mutation): Sometimes, the GA introduces small changes (mutations) to an arm bracket's traits. It's like adding a pinch of spice to a recipe. These mutations help explore new possibilities.
-5.	Repeat: The GA keeps doing this—evaluating fitness, mixing traits, and adding mutations—over many generations. Each new generation gets better at solving the problem.
+5.	Repeat: The GA keeps doing thisï¿½evaluating fitness, mixing traits, and adding mutationsï¿½over many generations. Each new generation gets better at solving the problem.
 
 A **genetic algorithm** is like a recipe optimizer that uses natural selection and mixing to find the best solution to a problem. 
 
 ## GA Related to Structure Elements
-Let’s relate to structural elements in the context of genetic algorithms (GAs) for structural design optimization.
+Letï¿½s relate to structural elements in the context of genetic algorithms (GAs) for structural design optimization.
 1.	**Chromosome Representation**:
     - In a GA, a chromosome represents a potential solution (design) to the optimization problem.
     - For structural design, each gene within the chromosome corresponds to a specific structural element (e.g., beam, column, joint, truss member).
@@ -27,7 +30,7 @@ Let’s relate to structural elements in the context of genetic algorithms (GAs) f
         - Binary Encoding: Each gene is represented by a sequence of binary bits (0s and 1s). For example, a binary chromosome might represent whether a particular beam exists (1) or not (0).
         - Integer Encoding: Each gene is an integer value representing a discrete choice (e.g., the number of beams or columns).
         - Real-Valued Encoding: Each gene is a real number representing a continuous parameter (e.g., length, thickness, material properties).
-3.	**Example**: Let’s consider a simple truss structure optimization problem:
+3.	**Example**: Letï¿½s consider a simple truss structure optimization problem:
     - We want to design a truss with a fixed number of beams and joints.
     - Each gene in the chromosome represents a beam (or a joint).
     - Binary encoding: A gene value of 1 indicates the presence of a beam; 0 indicates its absence.
@@ -62,11 +65,11 @@ Let’s relate to structural elements in the context of genetic algorithms (GAs) f
 
 A population is generated using a random selection of the following genes for each chromosome:
 
-    - Bolt Diameter – randomly select a bolt diameter starting at 0.625” to 1.50” incremented by 0.125”.
-    - Bolt Qty – randomly select an even number between 2 and 20.
-    - Bracket Thickness – randomly select an array index to select a thickness from the array (0.50, 0.625, 0.75, 0.875, 1.00, 1.25).
-    - Stiffener Thickness – randomly select an array index to select a thickness from the array (0.50, 0.625, 0.75, 0.875, 1.00, 1.25).
-    - Stiffener qty – randomly select either 0 or 2.
+    - Bolt Diameter ï¿½ randomly select a bolt diameter starting at 0.625ï¿½ to 1.50ï¿½ incremented by 0.125ï¿½.
+    - Bolt Qty ï¿½ randomly select an even number between 2 and 20.
+    - Bracket Thickness ï¿½ randomly select an array index to select a thickness from the array (0.50, 0.625, 0.75, 0.875, 1.00, 1.25).
+    - Stiffener Thickness ï¿½ randomly select an array index to select a thickness from the array (0.50, 0.625, 0.75, 0.875, 1.00, 1.25).
+    - Stiffener qty ï¿½ randomly select either 0 or 2.
 
 Each random selection of genes will make up a chromosome (solution). An analysis of the arm bracket is run using **ArmBracketLib**. The result of the analysis is used to provide the values for the chromosome.  The **ArmBrackeLib** is run for each chromosome in the population.
 
@@ -76,9 +79,9 @@ The fitness of the population is determined by the smallest weight.  Since Genet
 
 Each population will contain from 75 to 200 chromosomes (solutions).
 
-The algorithm will then iterate through many generations containing various mutations and crossovers until fitness stagnation occurs.  Fitness Stagnation refers to a situation where the best chromosome’s fitness remains unchanged over several generations. When this occurs, it indicates that the genetic algorithm has reached a plateau, and further optimization is not occurring.  For an arm bracket design, the fitness stagnation is defined as 10 iterations at which point the process is terminated.  
+The algorithm will then iterate through many generations containing various mutations and crossovers until fitness stagnation occurs.  Fitness Stagnation refers to a situation where the best chromosomeï¿½s fitness remains unchanged over several generations. When this occurs, it indicates that the genetic algorithm has reached a plateau, and further optimization is not occurring.  For an arm bracket design, the fitness stagnation is defined as 10 iterations at which point the process is terminated.  
 
 At termination, OptimizeArmBracket will output the best chromosome (solution) which will contain the arm bracket with the optimum or lowest weight for the loads.
 
 ## ArmBracketLib
-**ArmBracketLib** will analyze an arm bracket using Hock’s analysis procedure as defined in his 5/07/18 Excel workbook (`Arm Bracket Design_Version_050718_Latest.xlsm`).
+**ArmBracketLib** will analyze an arm bracket using Hockï¿½s analysis procedure as defined in his 5/07/18 Excel workbook (`Arm Bracket Design_Version_050718_Latest.xlsm`).
