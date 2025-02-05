@@ -10,6 +10,7 @@ env:
   DOTNET_VERSION: '8.0.x'
   SOLUTION_FILE_PATH: ./OptimizeArmBracket1.sln
   BUILD_CONFIGURATION: Release
+  OUTPUT_PATH: C:/Publish/OptimizeArmBracket1
 
 jobs:
   build-and-deploy:
@@ -32,6 +33,12 @@ jobs:
     - name: Publish
       run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --output C:/Publish/OptimizeArmBracket1
 
+    - name: View Environment
+      run: |
+      echo "DOTNET_VERSION = ${{ env.DOTNET_VERSION }}"
+      echo "SOLUTION_FILE_PATH = ${{ env.SOLUTION_FILE_PATH }}"
+      echo "BUILD_CONFIGURATION = ${{ env.BUILD_CONFIGURATION }}"
+
     - name: Deploy based on branch
       run: |
         $branch = "${{ github.ref }}"
@@ -44,6 +51,8 @@ jobs:
         } elseif ($branch -eq "refs/heads/dev") {
           $deployPath = "C:\Deployments\Development"
         }
+
+        echo "deployPath = ${{ deployPath }}"
 
         if ($deployPath -ne "") {
           # Create directory if it doesn't exist
