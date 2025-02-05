@@ -52,7 +52,7 @@ jobs:
           $deployPath = "C:\Deployments\Development"
         }
 
-        echo "deployPath = ${{ deployPath }}"
+        echo "deployPath = $deployPath"
 
         if ($deployPath -ne "") {
           # Create directory if it doesn't exist
