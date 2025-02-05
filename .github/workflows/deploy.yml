@@ -30,7 +30,7 @@ jobs:
       run: dotnet build ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-restore
 
     - name: Publish
-      run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --output ./publish
+      run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --output C:/Publish/OptimizeArmBracket1
 
     - name: Deploy based on branch
       run: |
@@ -52,7 +52,7 @@ jobs:
           }
 
           # Copy published files
-          Copy-Item -Path ".\publish\*" -Destination $deployPath -Recurse -Force
+          Copy-Item -Path "C:\Publish\OptimizeArmBracket1\*" -Destination $deployPath -Recurse -Force
 
           Write-Host "Deployed to: $deployPath"
         }
