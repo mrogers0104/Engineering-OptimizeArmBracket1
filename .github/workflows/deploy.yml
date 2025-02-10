@@ -14,7 +14,7 @@ env:
   OUTPUT_PATH: C:/Publish/OptimizeArmBracket1
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: windows-latest
 
     steps:
@@ -32,16 +32,13 @@ jobs:
       run: dotnet build ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-restore
 
     - name: Publish
-      run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} -c ${{ env.BUILD_CONFIGURATION }} -o C:/Publish/OptimizeArmBracket1
-      # run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --output C:/Publish/OptimizeArmBracket1
+      run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --output ${{ env.OUTPUT_PATH }}
 
-    # # In GitHub Actions workflow
-    # - name: Set Directory Permissions
-    #   run: |
-    #     $acl = Get-Acl "C:\Deployments"
-    #     $rule = New-Object System.Security.AccessControl.FileSystemAccessRule("Everyone", "Modify", "ContainerInherit,ObjectInherit", "None", "Allow")
-    #     $acl.SetAccessRule($rule)
-    #     $acl | Set-Acl "C:\Deployments"     
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: published-files
+        path: ${{ env.OUTPUT_PATH }}
 
     - name: View Environment
       run: |
@@ -50,36 +47,46 @@ jobs:
         echo "PROJECT_FILE_PATH = ${{ env.PROJECT_FILE_PATH }}"
         echo "BUILD_CONFIGURATION = ${{ env.BUILD_CONFIGURATION }}"
 
-    - name: Deploy based on branch
-      run: |
-        $branch = "${{ github.ref }}"
-        $deployPath = ""
+  deploy:
+    runs-on: windows-latest
+    needs: build
 
-        if ($branch -eq "refs/heads/main") {
-          $deployPath = "C:\Deployments\Production"
-        } elseif ($branch -eq "refs/heads/test") {
-          $deployPath = "C:\Deployments\Test"
-        } elseif ($branch -eq "refs/heads/dev") {
-          $deployPath = "C:\Deployments\Development"
-        }
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: published-files
+          path: ${{ env.OUTPUT_PATH }}
 
-        echo "deployPath = $deployPath"
+      - name: Deploy based on branch
+        shell: pwsh
+        run: |
+          $branch = "${{ github.ref }}"
+          $deployPath = ""
 
-        if ($deployPath -ne "") {
-          # Create directory if it doesn't exist
-          if (!(Test-Path $deployPath)) {
-            New-Item -ItemType Directory -Path $deployPath -Force
+          if ($branch -eq "refs/heads/main") {
+            $deployPath = "C:\Deployments\Production"
+          } elseif ($branch -eq "refs/heads/test") {
+            $deployPath = "C:\Deployments\Test"
+          } elseif ($branch -eq "refs/heads/dev") {
+            $deployPath = "C:\Deployments\Development"
           }
 
-          # Copy published files
-          Copy-Item -Path "C:\Publish\OptimizeArmBracket1\*" -Destination $deployPath -Recurse -Force
+          echo "deployPath = $deployPath"
 
-          Write-Host "Deployed to: $deployPath"
-        }
-          
-      shell: pwsh
+          if ($deployPath -ne "") {
+            # Create directory if it doesn't exist
+            if (!(Test-Path $deployPath)) {
+              New-Item -ItemType Directory -Path $deployPath -Force
+            }
 
-    - name: Debug Publish
-      run: |
-        ls ${{ env.OUTPUT_PATH }}
-        Get-ChildItem -Path ${{ env.OUTPUT_PATH }}
+            # Copy published files
+            Copy-Item -Path ${{ env.OUTPUT_PATH }}\* -Destination $deployPath -Recurse -Force
+
+            Write-Host "Deployed to: $deployPath"
+          }
+
+        - name: Debug Publish
+          run: |
+            ls ${{ env.OUTPUT_PATH }}
+            Get-ChildItem -Path ${{ env.OUTPUT_PATH }}

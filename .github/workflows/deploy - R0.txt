@@ -1,0 +1,89 @@
+name: .NET 8.0 Deploy
+
+on:
+  push:
+    branches: [ main, test, dev ]
+  pull_request:
+    branches: [ main, test, dev ]
+
+env:
+  DOTNET_VERSION: '8.0.x'
+  SOLUTION_FILE_PATH: ./OptimizeArmBracket1.sln
+  PROJECT_FILE_PATH: ./ArmBracketLib/ArmBracketDesignLibrary.csproj
+  BUILD_CONFIGURATION: Release
+  OUTPUT_PATH: C:/Publish/OptimizeArmBracket1
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+
+    - name: Restore dependencies
+      run: dotnet restore ${{ env.SOLUTION_FILE_PATH }}
+
+    - name: Build
+      run: dotnet build ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-restore
+
+    - name: Publish
+      run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --output C:/Publish/OptimizeArmBracket1
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: published-files
+        path: C:/Publish/OptimizeArmBracket1
+
+    - name: View Environment
+      run: |
+        echo "DOTNET_VERSION = ${{ env.DOTNET_VERSION }}"
+        echo "SOLUTION_FILE_PATH = ${{ env.SOLUTION_FILE_PATH }}"
+        echo "PROJECT_FILE_PATH = ${{ env.PROJECT_FILE_PATH }}"
+        echo "BUILD_CONFIGURATION = ${{ env.BUILD_CONFIGURATION }}"
+
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+      - name: Download 
+
+
+    - name: Deploy based on branch
+      run: |
+        $branch = "${{ github.ref }}"
+        $deployPath = ""
+
+        if ($branch -eq "refs/heads/main") {
+          $deployPath = "C:\Deployments\Production"
+        } elseif ($branch -eq "refs/heads/test") {
+          $deployPath = "C:\Deployments\Test"
+        } elseif ($branch -eq "refs/heads/dev") {
+          $deployPath = "C:\Deployments\Development"
+        }
+
+        echo "deployPath = $deployPath"
+
+        if ($deployPath -ne "") {
+          # Create directory if it doesn't exist
+          if (!(Test-Path $deployPath)) {
+            New-Item -ItemType Directory -Path $deployPath -Force
+          }
+
+          # Copy published files
+          Copy-Item -Path "C:\Publish\OptimizeArmBracket1\*" -Destination $deployPath -Recurse -Force
+
+          Write-Host "Deployed to: $deployPath"
+        }
+          
+      shell: pwsh
+
+    - name: Debug Publish
+      run: |
+        ls ${{ env.OUTPUT_PATH }}
+        Get-ChildItem -Path ${{ env.OUTPUT_PATH }}
