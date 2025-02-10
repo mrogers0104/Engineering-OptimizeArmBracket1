@@ -11,7 +11,7 @@ env:
   SOLUTION_FILE_PATH: ./OptimizeArmBracket1.sln
   PROJECT_FILE_PATH: ./ArmBracketLib/ArmBracketDesignLibrary.csproj
   BUILD_CONFIGURATION: Release
-  OUTPUT_PATH: C:/Publish/OptimizeArmBracket1
+  OUTPUT_PATH: C:\Publish\OptimizeArmBracket1
 
 jobs:
   build:
@@ -86,7 +86,8 @@ jobs:
             Write-Host "Deployed to: $deployPath"
           }
 
-        - name: Debug Publish
-          run: |
-            ls ${{ env.OUTPUT_PATH }}
-            Get-ChildItem -Path ${{ env.OUTPUT_PATH }}
+      - name: Debug Publish
+        shell: pwsh
+        run: |
+          ls ${{ env.OUTPUT_PATH }}
+          Get-ChildItem -Path ${{ env.OUTPUT_PATH }}
