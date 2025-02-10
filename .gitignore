@@ -17,6 +17,10 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# GitHub Actions: self-hosted runner
+_diag/
+_work/
+
 # Mono auto generated files
 mono_crash.*
 
