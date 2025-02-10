@@ -67,5 +67,7 @@ jobs:
           Copy-Item -Path "C:\Publish\OptimizeArmBracket1\*" -Destination $deployPath -Recurse -Force
 
           Write-Host "Deployed to: $deployPath"
+
+          ls "C:\Publish\OptimizeArmBracket1"
         }
       shell: pwsh
