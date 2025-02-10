@@ -80,6 +80,6 @@ jobs:
       shell: pwsh
 
     - name: Debug Publish
-        run: |
-          ls ${{ env.OUTPUT_PATH }}
-          Get-ChildItem -Path ${{ env.OUTPUT_PATH }}
+      run: |
+        ls ${{ env.OUTPUT_PATH }}
+        Get-ChildItem -Path ${{ env.OUTPUT_PATH }}
