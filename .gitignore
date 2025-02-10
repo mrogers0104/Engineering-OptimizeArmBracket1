@@ -18,6 +18,7 @@
 *.userprefs
 
 # GitHub Actions: self-hosted runner
+actions-runner/*.zip
 _diag/
 _work/
 
