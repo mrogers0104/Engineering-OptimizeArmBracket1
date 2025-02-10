@@ -35,6 +35,14 @@ jobs:
       run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --output C:/Publish/OptimizeArmBracket1
       # run: dotnet publish ${{ env.SOLUTION_FILE_PATH }} --configuration ${{ env.BUILD_CONFIGURATION }} --no-build --output C:/Publish/OptimizeArmBracket1
 
+    # In GitHub Actions workflow
+    - name: Set Directory Permissions
+      run: |
+        $acl = Get-Acl "C:\Deployments"
+        $rule = New-Object System.Security.AccessControl.FileSystemAccessRule("Everyone", "Modify", "ContainerInherit,ObjectInherit", "None", "Allow")
+        $acl.SetAccessRule($rule)
+        $acl | Set-Acl "C:\Deployments"     
+
     - name: View Environment
       run: |
         echo "DOTNET_VERSION = ${{ env.DOTNET_VERSION }}"
@@ -68,6 +76,6 @@ jobs:
 
           Write-Host "Deployed to: $deployPath"
 
-          ls "C:\Publish\OptimizeArmBracket1"
+          # ls "C:\Publish\OptimizeArmBracket1"
         }
       shell: pwsh
