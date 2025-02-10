@@ -48,7 +48,7 @@ jobs:
         echo "BUILD_CONFIGURATION = ${{ env.BUILD_CONFIGURATION }}"
 
   deploy:
-    runs-on: windows-latest
+    runs-on: self-hosted
     needs: build
 
     steps:
@@ -80,8 +80,10 @@ jobs:
               New-Item -ItemType Directory -Path $deployPath -Force
             }
 
-            # Copy published files
+            # Copy published files - only copies within the virtual machine
             Copy-Item -Path ${{ env.OUTPUT_PATH }}\* -Destination $deployPath -Recurse -Force
+
+            actions/upload-artifact@v4
 
             Write-Host "Deployed to: $deployPath"
           }
