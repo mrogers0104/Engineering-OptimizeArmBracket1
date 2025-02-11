@@ -86,8 +86,8 @@ jobs:
             Write-Host "Deployed to: $deployPath"
           }
 
-      - name: Debug Publish
-        shell: pwsh
-        run: |
-          ls ${{ env.OUTPUT_PATH }}
-          Get-ChildItem -Path ${{ env.OUTPUT_PATH }}
+      # - name: Debug Publish
+      #   shell: pwsh
+      #   run: |
+      #     ls ${{ env.OUTPUT_PATH }}
+      #     Get-ChildItem -Path ${{ env.OUTPUT_PATH }}
